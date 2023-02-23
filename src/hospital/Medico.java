@@ -1,9 +1,10 @@
 package hospital;
 
-public class Medico extends Trabajador{
+public abstract class Medico extends TrabajadorHospital {
     private int numeroColegiado;
     private int numeroPaciente;
     private Especialidad especialidad;
+
 
     public Medico() {
     }
@@ -15,6 +16,12 @@ public class Medico extends Trabajador{
         this.especialidad = especialidad;
     }
 
+    @Override
+    public abstract double calcularSueldo();
+
+
+
+    //getters and setters
     public int getNumeroColegiado() {
         return numeroColegiado;
     }

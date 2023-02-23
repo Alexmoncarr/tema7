@@ -1,6 +1,6 @@
 package hospital;
 
-public class NoMedico extends Trabajador{
+public abstract class NoMedico extends TrabajadorHospital{
     Puesto puesto;
     String area;
 
@@ -13,6 +13,10 @@ public class NoMedico extends Trabajador{
         this.area = area;
     }
 
+    @Override
+    public abstract double calcularSueldo();
+
+    //getters and setters
     public Puesto getPuesto() {
         return puesto;
     }

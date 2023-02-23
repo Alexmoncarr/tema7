@@ -1,18 +1,20 @@
 package hospital;
 
-public class Trabajador {
+public abstract class TrabajadorHospital {
     protected String nombre;
     protected int id;
     protected double sueldo;
 
-    public Trabajador() {
+    public TrabajadorHospital() {
     }
 
-    public Trabajador(String nombre, int id, double sueldo) {
+    public TrabajadorHospital(String nombre, int id, double sueldo) {
         this.nombre = nombre;
         this.id = id;
         this.sueldo = sueldo;
     }
+
+    public abstract double calcularSueldo();
 
     public String getNombre() {
         return nombre;
