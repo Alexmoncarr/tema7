@@ -3,7 +3,7 @@ package ikea;
 import java.util.ArrayList;
 
 public class Tienda {
-    ArrayList<Producto>productos;
+    private ArrayList<Producto>productos;
 
     //Constructor
 
